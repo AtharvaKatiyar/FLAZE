@@ -29,12 +29,10 @@ export default function Sidebar() {
 
   return (
     <div className="fixed left-0 top-0 h-screen w-64 bg-black border-r border-white flex flex-col justify-between">
-      {/* --- Logo Section --- */}
       <div className="flex items-center p-6">
         <Link to="/" className="text-white text-bold custom-font text-2xl">FLAZE</Link>
       </div>
-
-      {/* --- Navigation --- */}
+      
       <nav className="flex-1 px-4 space-y-2">
         {navItems.map((item, idx) => (
           <NavLink
@@ -53,8 +51,6 @@ export default function Sidebar() {
           </NavLink>
         ))}
       </nav>
-
-      {/* --- Profile Section --- */}
       <div className="p-6 border-t mx-auto border-white">
         <ConnectButton
           client={client}
