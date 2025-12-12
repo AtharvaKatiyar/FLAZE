@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "elegant";
+  src: url("./categories_elegant_demo.ttf") format("truetype"),
+       url("./categories_elegant_demo.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.custom-font {
+  font-family: 'elegant', sans-serif;
+}
